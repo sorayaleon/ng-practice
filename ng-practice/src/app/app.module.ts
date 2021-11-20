@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { HeroeComponent } from './components/heroes/heroe/heroe.component';
+import { ListComponent } from './components/heroes/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
-    HeroeComponent
+    HeroeComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
