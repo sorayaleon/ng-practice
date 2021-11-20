@@ -21,4 +21,9 @@ export class MainPageComponent {
     name: 'Maestro Roshi',
     power: 1000
   }
+
+
+  addNewCharacter(param: Character) {
+    this.characters.push(param);
+  }
 }
