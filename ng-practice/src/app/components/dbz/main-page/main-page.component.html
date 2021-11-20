@@ -6,14 +6,6 @@
     <app-characters [characters]="characters"></app-characters>
   </div>
   <div class="col">
-    <h3>Add</h3>
-    <hr>
-
-    <form (ngSubmit)="add()">
-      <input type="text" placeholder="Name" name="name" [(ngModel)]="new.name">
-      <input type="number" placeholder="Power" name="power" [(ngModel)]="new.power">
-
-      <button type="submit">Add</button>
-    </form>
+    <app-add [characters]="characters" [new]="new"></app-add>
   </div>
 </div>

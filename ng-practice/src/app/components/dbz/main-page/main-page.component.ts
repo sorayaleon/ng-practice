@@ -18,20 +18,7 @@ export class MainPageComponent {
   ]
 
   new: Character = {
-    name: '',
-    power: 0
-  }
-
-  add() {
-    if(this.new.name.trim().length === 0) {
-      //Exits the method
-      return;
-    }
-    console.log(this.new)
-    this.characters.push(this.new);
-    this.new = {
-      name: '',
-      power:0
-    }
+    name: 'Maestro Roshi',
+    power: 1000
   }
 }
