@@ -1,0 +1,9 @@
+<h3>Characters</h3>
+<hr>
+<ul>
+  <li *ngFor="let character of characters">
+    <!-- | number is a pipe. Show numbers with number notation -->
+    {{character.name}} - {{character.power | number}}
+  </li>
+
+</ul>
