@@ -15,9 +15,11 @@
     <h3>Add</h3>
     <hr>
 
-    <form>
+    <form (ngSubmit)="add()">
       <input type="text" placeholder="Name">
       <input type="number" placeholder="Power">
+
+      <button type="submit">Add</button>
     </form>
   </div>
 </div>
