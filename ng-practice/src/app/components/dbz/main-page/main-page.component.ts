@@ -1,12 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Character {
+  name: string;
+  power: number;
+}
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
 })
 export class MainPageComponent {
 
+  new:Character = {
+    name: 'Trucks',
+    power: 14000
+  }
+
   add() {
-    console.log("Hola")
+    console.log(this.new)
   }
 }
