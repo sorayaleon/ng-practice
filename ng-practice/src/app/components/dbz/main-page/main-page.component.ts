@@ -7,28 +7,19 @@ import { DbzService } from '../services/dbz.service';
 })
 export class MainPageComponent {
 
-  characters: Character[] = [
-    {
-      name: 'Goku',
-      power: 15000
-    },
-    {
-      name: 'Vegeta',
-      power: 7500
-    }
-  ]
-
   new: Character = {
     name: 'Maestro Roshi',
     power: 1000
   }
 
+  // get characters(): Character[] {
+  //   return this.DbzService.characters;
+  // }
 
-  addNewCharacter(param: Character) {
-    this.characters.push(param);
-  }
+  // addNewCharacter(param: Character) {
+  //   this.characters.push(param);
+  // }
 
-  constructor(private DbzService: DbzService) {
-
+  constructor() {
   }
 }
