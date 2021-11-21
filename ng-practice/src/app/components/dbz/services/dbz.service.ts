@@ -20,6 +20,9 @@ export class DbzService {
   }
 
   constructor() {
-    console.log("Service init")
+  }
+
+  addCharacter(character: Character){
+    this._characters.push(character);
   }
 }
